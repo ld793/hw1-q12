@@ -10,9 +10,11 @@ raw <- read.csv("data/pew.csv", check.names = F)
 
 head(raw)
 
+# Load  reshape 2 library
 library(reshape2)
 tidy <- melt(raw, id = "religion")
 
+# explore data
 head(raw)
 head(tidy)
 
